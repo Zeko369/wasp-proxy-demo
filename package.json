@@ -1,0 +1,13 @@
+{
+  "name": "wasp-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Fran Zekan <zekan.fran369@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"cd ./client && yarn dev\" \"cd ./proxy && yarn dev\" \"cd ./server && yarn dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
