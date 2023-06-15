@@ -34,6 +34,8 @@ const QueryComponent = ({ endpoint }: { endpoint: string }) => {
     <div>
       <h1>{endpoint}</h1>
       <pre>{JSON.stringify(query.data, null, 2)}</pre>
+
+      <h2>{query.isFetching ? "isFetching" : null}</h2>
     </div>
   );
 };

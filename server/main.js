@@ -5,6 +5,7 @@ const app = fastify();
 await app.register(fastifyCors, {origin: '*', methods: ['GET', 'HEAD']});
 
 app.get("/", async (request, reply) => {
+  await new Promise((resolve) => setTimeout(resolve, 300));
   console.log(`${request.id} - Request starting...`);
 
   return { hello: "world" };
